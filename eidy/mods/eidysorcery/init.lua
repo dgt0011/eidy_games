@@ -27,7 +27,6 @@ minetest.register_chatcommand("spell", {
 		playerpos["y"] = playerpos["y"] + 1
 		
 		if param.find(param,"summon") ~= nil and param.find(param,"volcano") ~= nil then
-			playerpos["z"] = playerpos["z"] + 1
 			minetest.add_item(playerpos,"default:lava_source")
 			minetest.chat_send_player(name, "The gods give you a volcano")
 		end
